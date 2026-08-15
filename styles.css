@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-size: 18px;
+}
+
+*::selection {
+    background-color: rgb(90, 89, 89);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Literata", serif;
+}
+
+.content__container {
+    max-width: 720px;
+    width: 100%;
+}
+
+section {
+    border: 2px solid #000;
+}
+
+.tapa,
+.autor,
+.capitulo__1,
+.capitulo__2,
+.capitulo__3,
+.final,
+.contratapa {
+    aspect-ratio: 1601 / 2560;
+    width: 100%;
+    position: relative;
+}
+
+.tapa {
+    background-image: url("./assets/tapa.png");
+    background-size: cover;
+}
+
+.autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.autor__name {
+    font-weight: 600;
+}
+
+.autor__span {
+    color: #fff;
+    position: absolute;
+}
+
+.final__span {
+    position: absolute;
+    color: #ededed;
+}
+
+.autor__span__1 {
+    top: 30%;
+    left: 15%;
+}
+
+.autor__span__2 {
+    top: 46%;
+    right: 20%;
+}
+
+.autor__span__3 {
+    top: 57%;
+    left: 26%;
+}
+
+.autor__span__4 {
+    top: 70%;
+    right: 15%;
+}
+
+.autor__mensaje {
+    position: absolute;
+    opacity: 0;
+    top: 60%;
+    transition: opacity 2s ease;
+    pointer-events: none;
+    transition: opacity 5s;
+    color: #666565;
+}
+
+.autor__mensaje__show {
+    opacity: 1;
+}
+
+.capitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    padding: 10% 5%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.capitulo__showed {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.capitulo__pagina {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capitulo__img,
+.capitulo__transcripcion {
+    transition: all 5s ease;
+}
+
+.capitulo__img {
+    height: 100%;
+    max-height: 0px;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.capitulo__transcripcion {
+    height: 100%;
+    max-height: 0px;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.capitulo__transcripcion__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 1.7;
+    width: auto;
+}
+
+.capitulo__img__show {
+    width: 100%;
+    max-height: 716px;
+    opacity: 1;
+}
+
+.capitulo__transcripcion__show {
+    width: 100%;
+    max-height: 400px;
+    opacity: 1;
+}
+
+.capitulo__btn {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 4px 2px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.capitulo__btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.contratapa {
+    background-image: url("./assets/contratapa.png");
+    background-size: cover;
+}
+
+.show__span {
+    user-select: text;
+    color: #ededed;
+}
+
+span {
+    user-select: text;
+}
+
+.final__span__1 {
+    top: 40%;
+    left: 50%
+}
+
+.final__span__2 {
+    top: 60%;
+    right: 40%;
+}
+
+.final__span__3 {
+    top: 73%;
+    left: 45%
+}
