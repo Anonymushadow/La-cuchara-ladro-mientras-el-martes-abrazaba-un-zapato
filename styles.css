@@ -60,7 +60,7 @@ section {
 
 .final__span {
     position: absolute;
-    color: #fefde0;
+    color: #ededed;
 }
 
 .autor__span__1 {
@@ -195,7 +195,7 @@ section {
 
 .show__span {
     user-select: text;
-    color: #fefde0;
+    color: #ededed;
 }
 
 span {
@@ -216,4 +216,14 @@ span {
 .final__span__3 {
     top: 73%;
     left: 45%
+}
+
+@media screen and(max-width: 500px) {
+    .final__span {
+        color: #fefde0;
+    }
+
+    .show__span {
+        #fefde0
+    }
 }
