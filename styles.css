@@ -60,7 +60,7 @@ section {
 
 .final__span {
     position: absolute;
-    color: #ededed;
+    color: #efefef;
 }
 
 .autor__span__1 {
@@ -195,11 +195,12 @@ section {
 
 .show__span {
     user-select: text;
-    color: #ededed;
+    color: #efefef;
 }
 
 span {
     user-select: text;
+    cursor: context-menu;
 }
 
 .final__span__1 {
