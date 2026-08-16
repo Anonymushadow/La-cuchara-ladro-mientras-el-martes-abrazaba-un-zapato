@@ -218,7 +218,7 @@ span {
     left: 45%
 }
 
-@media screen and(max-width: 500px) {
+@media screen and (max-width: 500px) {
     .final__span {
         color: #fefde0;
     }
